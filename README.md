@@ -16,12 +16,21 @@ Run
 ---
 
 ```
-./gradlew run
+./gradlew clean compileKotlin2Js
+```
+
+It will generate a `hello.js` in `node/`.
+
+Then
+
+```
+cd node
+npm install
+node hello.js
 ```
 
 You will see some JSON output.
 
-Or you can run the `Hello.kt` from IDEA directly.
 
 
 
